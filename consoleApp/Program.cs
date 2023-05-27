@@ -46,6 +46,7 @@ namespace consoleApp
             double angleTwo = 360 - angleOne;
 
             Console.WriteLine("\n--+--+--+--+--+--+--+--+--+--");
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
             if (angleOne == 360 || hourDegrees == minuteDegrees)
             {
                 Console.WriteLine("THE HOUR AND MINUTE HANDS ARE IN THE SAME POSITION (0 DEGREES)");
@@ -59,6 +60,7 @@ namespace consoleApp
             {
                 Console.WriteLine($"THE LESSER ANGLE IS {angleOne} DEGREES");
             }
+            Console.ResetColor();
             Console.WriteLine("--+--+--+--+--+--+--+--+--+--\n\n");
 
 
